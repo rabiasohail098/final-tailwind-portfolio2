@@ -28,7 +28,7 @@ const Cards:React.FC<propsType> = ({title,des,link,img,tag}) => {
       <div className='p-4 space-y-4 '>
         <div className="text-4xl" font-extralight>{title}</div>
         <div>{des}</div>
-        <button className='text-[10px] p-2'>{link}</button>
+        <button className='text-[13px]'>{link}</button>
         <div className='flex gap-3'>
             {tag.map(el=><div className='tags border border-accent p-2'
         key={el}
