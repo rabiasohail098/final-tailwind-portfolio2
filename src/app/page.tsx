@@ -1,5 +1,5 @@
 "use client"
-import Hero from "./components/hero";
+
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
