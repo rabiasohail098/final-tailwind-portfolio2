@@ -98,7 +98,7 @@ const Projects = () => {
     <section className="text-gray-600 bg-cover bg-fixed bg-center body-font" style={{backgroundImage:`url(/images/bg.jpg) `}}>
     <div data-aos="zoom-in-up" className='container pt-32'>
         <Heading title="My Projects"/>
-        <div className='grid lg:gap-x-10 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center '>
+        <div className='grid lg:gap-x-20 xl:gap-0 xl:gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center '>
             {data.map((items)=>(
                 <Cards 
                 key={items.id}

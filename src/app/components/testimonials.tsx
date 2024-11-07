@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <div className='container pr-32 pt-32'>
         <Heading title="Testimonials"/>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 p-2 ml-5 gap-8'>
             {testimoniaksData.map((item,index)=>(
                 <TestimonialsCards 
                 key={index}
