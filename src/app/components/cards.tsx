@@ -8,33 +8,27 @@ import Image from 'next/image';
 interface propsType{
     title:string;
     des:string;
-    link:string;
-    img:string;
+  link: string;
+  link1: string;
     tag:string[];
 }
-const Cards:React.FC<propsType> = ({title,des,link,img,tag}) => {
+const Cards:React.FC<propsType> = ({title,des,link,link1,tag}) => {
   return (
-    <div className='border-4 border-b-sky-500 border-t-purple-400  border-l-pink-400 border-r-teal-400  w-[300px] gap-10 sm:w-[350px] sm:mb-3 mb-6'>
-        <div>
-        <Image className="w-[300px] sm:w-[350px] h-[350px] p-4 "
-        src={img}
-        alt={title}
-        width={350}
-        height={350}
-        />
-        
-      </div>
+   
+  
 
-      <div className='p-4 space-y-4 '>
-        <div className="text-4xl" font-extralight>{title}</div>
-        <div>{des}</div>
-        <button className='text-[13px]'>{link}</button>
-        <div className='flex gap-3'>
-            {tag.map(el=><div className='tags border border-accent p-2'
+      <div className='space-y-3'>
+        <h2 className="text-lg text-blue-600 font-semibold font-serif mt-2">{title}</h2>
+        <p>{des}</p>
+      <button className='text-[10px] border border-accent px-2 py-2'>{link}</button>
+      <button className='text-[10px] border border-accent px-2 py-2'><span className='text-blue-700 font-semibold'>Vercel Link:</span> {link1}</button>
+    
+        <div className='flex gap-3 px-4'>
+            {tag.map(el=><button className='tags  border border-accent text-[8px] px-2 py-1'
         key={el}
-        >{el}</div>)}
+        >{el}</button>)}
         </div>
-      </div>
+     
     </div>
 
 
