@@ -163,7 +163,7 @@ const Projects = () => {
     <div data-aos="zoom-in-up" className='container pt-22'>
         <Heading title="My Projects"/>
         <div className='grid lg:gap-x-20 xl:gap-0 xl:gap-y-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center '>
-                  {data.map((items:any) => (
+                  {data.map((items) => (
                       <div className='border-4 border-b-sky-500 border-t-purple-400  border-l-pink-400 border-r-teal-400 py-4 w-[250px] px-4 gap-6  my-6' key={items.id}>
                 <Image  src={items.img} alt={items.title} width={200} height={200} className="w-[240px] h-[200px]" />
                 <Cards 
