@@ -5,6 +5,7 @@ import Heading from '../components/heading'
 import Cards from '../components/cards'
 import AOS from "aos"
 import Image from 'next/image'
+import Link from 'next/link'
 import "aos/dist/aos.css"
 const data = [
     {
@@ -12,7 +13,7 @@ const data = [
         title:"Cli Based 13+ projects",
         des:"There are 13+ projects which is made by using typescript and inquirer.",
         img:"/images/cli.png",
-        link: "https://github.com/rabiasohail098/cli-all-projects",
+        link:"https://github.com/rabiasohail098/cli-all-projects",
         link1:"",
         tag:["TypeScript","Node","Inquirer"]
     },
@@ -49,7 +50,7 @@ const data = [
         des:"This is a Portfolio project which is made by using next.js and custom.css.",
         img:"/images/port-cus.png",
         link: "https://github.com/rabiasohail098/portfolio-custom-css",
-        link1:"https://portfolio-custom-css-rouge.vercel.app/",
+        link1:"https://portfolio-custom-css-rouge.vercel.app",
         tag:["Next.Js","Node","SCSS"]
     },
     {
@@ -58,7 +59,7 @@ const data = [
         des:"This is a Tour website which is made by using next.js and tailwind.css.",
         img:"/images/tour.png",
         link: "https://github.com/rabiasohail098/next-tour-website",
-        link1:"https://next-tour-website.vercel.app/",
+        link1:"https://next-tour-website.vercel.app",
         tag:["Next.Js","Node","SCSS"]
     },
     {
@@ -67,7 +68,7 @@ const data = [
         des:"This is a Food website which is made by using next.js and tailwind.css.",
         img:"/images/food.png",
         link: "https://github.com/rabiasohail098/food-website",
-        link1:"https://food-website-lake.vercel.app/",
+        link1:"https://food-website-lake.vercel.app",
         tag:["Next.Js","Node","SCSS"]
     },
     {
@@ -93,7 +94,7 @@ const data = [
         title:"Blog Website",
         des:"This is a Next.Js all version blog website.",
         img:"/images/tech (2).png",
-        link: "https://github.com/rabiasohail098/blog-website.git",
+        Link: "https://github.com/rabiasohail098/blog-website.git",
         link1:"https://blog-website-xwaz.vercel.app/",
         tag:["Next.Js","Node","SCSS"]
     },
@@ -170,10 +171,18 @@ const Projects = () => {
                 key={items.id}
                 title={items.title}
                 des={items.des}
-                tag={items.tag}
-                link={items.link}
-                link1={items.link1}
+                              tag={items.tag}
                           />
+                          <div className='flex px-8 justify-between'>
+                          <a href={items.link}>
+                 <button className='text-[10px] mt-2 border border-accent px-2 py-2'>Github link</button>
+                </a>
+                <a href={items.link1}>
+                 <button className='text-[10px] mt-2 border border-accent px-2 py-2'>Check It</button>
+                </a>
+                </div>
+            
+                         
                           </div>
             ))}
                           
