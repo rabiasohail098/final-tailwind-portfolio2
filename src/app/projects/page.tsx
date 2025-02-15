@@ -125,8 +125,8 @@ const data = [
         title:"FoodTuck",
         des:"This is a Q-Commerce FoodTuck website.",
         img:"/images/foodtuck.png",
-        link: "https://github.com/rabiasohail098/UI-UX-Hackathone.git",
-        link1:"https://ui-ux-hackathone-atj1.vercel.app/",
+        link: "https://github.com/rabiasohail098/Q-Commerce-FoodTuck.git",
+        link1:"https://q-commerce-food-tuck.vercel.app/",
         tag:["Next.Js","Node","SCSS"]
     },
     {
