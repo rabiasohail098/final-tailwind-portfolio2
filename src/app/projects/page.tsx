@@ -27,7 +27,7 @@ const data = [
         des:"This is a background changer project which is made by using next.js and tailwind.css.",
         img:"/images/bg-chan.png",
         link: "https://github.com/rabiasohail098/bg-changer-project",
-        link1:"",
+        link1:"https://bg-changer-project.vercel.app/",
         tag:["Next.js","Node","SCSS"]
     },
     {
@@ -36,7 +36,7 @@ const data = [
         des:"This is a password generator project which is made by using next.js and tailwind.css.",
         img:"/images/download.jpeg",
         link: 'https://github.com/rabiasohail098/password-generator',
-        link1:"",
+        link1:"https://password-generator-phi-plum.vercel.app/",
         tag:["Next.Js","Node","SCSS"]
     },
     {
@@ -45,7 +45,7 @@ const data = [
         des:"This is a Islamic Quiz App which is made by using next.js and tailwind.css.",
         img:"/images/quiz.png",
         link: "https://github.com/rabiasohail098/islamic-quiz-app",
-        link1:"",
+        link1:"https://figma-website-uy8l.vercel.app/",
         tag:["Next.Js","Node","SCSS"]
     },
     {
